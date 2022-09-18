@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CronExpressions", "App\CronExpressions\CronExpressions.csproj", "{9C029BDA-DAEB-46B5-8687-45C9E9FA55EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{2998373E-1313-4F50-993B-0A48AEA96445}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A952CEA6-C03B-4A95-A2A6-EAB31EFAAF28}"
 EndProject
