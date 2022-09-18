@@ -1,4 +1,4 @@
-﻿namespace Scriven.Deliveroo.CronExpressions.Parsers
+﻿namespace Scriven.Deliveroo.CronExpressions.Parsers.IndividualParsers
 {
     internal sealed class CronHour
     {

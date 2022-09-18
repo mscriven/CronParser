@@ -1,8 +1,8 @@
-﻿using Scriven.Deliveroo.CronExpressions.Parsers;
+﻿using Scriven.Deliveroo.CronExpressions.Parsers.IndividualParsers;
 
 namespace Scriven.Deliveroo.CronExpressions.Tests;
 
-public class CronTokenParserTests
+internal sealed class CronTokenParserTests
 {
     [Test]
     public void GivenAValidNumberOfMinutesReturnsMinute()

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Scriven.Deliveroo.CronExpressions.Parsers
+﻿namespace Scriven.Deliveroo.CronExpressions.Parsers.IndividualParsers
 {
     internal sealed class CronTokenParser
     {
@@ -14,9 +12,10 @@ namespace Scriven.Deliveroo.CronExpressions.Parsers
                 return timeExpression.Split(",").Select(s => int.Parse(s));
             }
 
-            if (timeExpression.StartsWith("*/")) {
+            if (timeExpression.StartsWith("*/"))
+            {
                 var num = int.Parse(timeExpression.Substring(2));
-                if (numofNums % num != 0) throw new InvalidOperationException($"Cannot specify frequencies because Cron is stateless. Specify a number that {(max+1)} is divisible by.");
+                if (numofNums % num != 0) throw new InvalidOperationException($"Cannot specify frequencies because Cron is stateless. Specify a number that {max + 1} is divisible by.");
                 var value = new List<int>();
                 var start = min;
                 while (start < max)
@@ -51,11 +50,11 @@ namespace Scriven.Deliveroo.CronExpressions.Parsers
             return new List<int> { minute };
         }
 
-        public IReadOnlyList<int> Minutes { get; }
+        public IReadOnlyList<int> Tokens { get; }
 
-        public CronTokenParser(IReadOnlyList<int> minutes)
+        public CronTokenParser(IReadOnlyList<int> tokens)
         {
-            Minutes = minutes;
+            Tokens = tokens;
         }
     }
 }
