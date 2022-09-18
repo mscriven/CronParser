@@ -885,6 +885,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "CronExpressions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CronExpressions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CronExpressions.dll": {}
+        }
       }
     }
   },
@@ -3868,10 +3878,16 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "CronExpressions/1.0.0": {
+      "type": "project",
+      "path": "../App/CronExpressions/CronExpressions.csproj",
+      "msbuildProject": "../App/CronExpressions/CronExpressions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CronExpressions >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
@@ -3885,9 +3901,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mikescriven/Code/CronParser/CronExpression.Tests/CronExpression.Tests.csproj",
-      "projectName": "CronExpression.Tests",
-      "projectPath": "/Users/mikescriven/Code/CronParser/CronExpression.Tests/CronExpression.Tests.csproj",
+      "projectUniqueName": "/Users/mikescriven/Code/CronParser/CronExpression.Tests/CronExpressions.Tests.csproj",
+      "projectName": "CronExpressions.Tests",
+      "projectPath": "/Users/mikescriven/Code/CronParser/CronExpression.Tests/CronExpressions.Tests.csproj",
       "packagesPath": "/Users/mikescriven/.nuget/packages/",
       "outputPath": "/Users/mikescriven/Code/CronParser/CronExpression.Tests/obj/",
       "projectStyle": "PackageReference",
@@ -3903,7 +3919,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/mikescriven/Code/CronParser/App/CronExpressions/CronExpressions.csproj": {
+              "projectPath": "/Users/mikescriven/Code/CronParser/App/CronExpressions/CronExpressions.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
