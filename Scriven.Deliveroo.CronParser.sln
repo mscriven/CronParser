@@ -3,17 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1703.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronParser.Console", "App\Scriven.Deliveroo.CronParser\CronParser.Console.csproj", "{6716D1BA-BC8B-462A-BC8D-DEC3D815C10D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronExpressions", "App\CronExpressions\CronExpressions.csproj", "{9C029BDA-DAEB-46B5-8687-45C9E9FA55EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronParser.Tests", "CronParser.Tests\CronParser.Tests.csproj", "{CEF64756-1944-4A36-BD83-B208D87CA564}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{2998373E-1313-4F50-993B-0A48AEA96445}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{CF7E9622-384B-411F-B7D3-8FA2E6E7E492}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A952CEA6-C03B-4A95-A2A6-EAB31EFAAF28}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A3393127-F538-4AB8-BF4C-B9079ACD63D2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronParser", "CronParser\CronParser.csproj", "{97D3CCE6-1834-47F4-B797-504D0A0B27F1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronParser.Console", "CronParser.Tests\CronParser.Consol\CronParser.Console.csproj", "{054921FA-62C4-4B99-984E-AEA327B24031}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronExpression.Tests", "CronExpression.Tests\CronExpression.Tests.csproj", "{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,22 +17,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6716D1BA-BC8B-462A-BC8D-DEC3D815C10D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6716D1BA-BC8B-462A-BC8D-DEC3D815C10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6716D1BA-BC8B-462A-BC8D-DEC3D815C10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6716D1BA-BC8B-462A-BC8D-DEC3D815C10D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CEF64756-1944-4A36-BD83-B208D87CA564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CEF64756-1944-4A36-BD83-B208D87CA564}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CEF64756-1944-4A36-BD83-B208D87CA564}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CEF64756-1944-4A36-BD83-B208D87CA564}.Release|Any CPU.Build.0 = Release|Any CPU
-		{97D3CCE6-1834-47F4-B797-504D0A0B27F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{97D3CCE6-1834-47F4-B797-504D0A0B27F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{97D3CCE6-1834-47F4-B797-504D0A0B27F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{97D3CCE6-1834-47F4-B797-504D0A0B27F1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{054921FA-62C4-4B99-984E-AEA327B24031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{054921FA-62C4-4B99-984E-AEA327B24031}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{054921FA-62C4-4B99-984E-AEA327B24031}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{054921FA-62C4-4B99-984E-AEA327B24031}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C029BDA-DAEB-46B5-8687-45C9E9FA55EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C029BDA-DAEB-46B5-8687-45C9E9FA55EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C029BDA-DAEB-46B5-8687-45C9E9FA55EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C029BDA-DAEB-46B5-8687-45C9E9FA55EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,9 +33,7 @@ Global
 		SolutionGuid = {D3BF8A47-E215-4280-8B32-1ABC464454A6}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{CEF64756-1944-4A36-BD83-B208D87CA564} = {A3393127-F538-4AB8-BF4C-B9079ACD63D2}
-		{6716D1BA-BC8B-462A-BC8D-DEC3D815C10D} = {CF7E9622-384B-411F-B7D3-8FA2E6E7E492}
-		{97D3CCE6-1834-47F4-B797-504D0A0B27F1} = {CF7E9622-384B-411F-B7D3-8FA2E6E7E492}
-		{054921FA-62C4-4B99-984E-AEA327B24031} = {A3393127-F538-4AB8-BF4C-B9079ACD63D2}
+		{9C029BDA-DAEB-46B5-8687-45C9E9FA55EC} = {2998373E-1313-4F50-993B-0A48AEA96445}
+		{0CF16B24-150D-4D5B-AF83-C68D5EA3445F} = {A952CEA6-C03B-4A95-A2A6-EAB31EFAAF28}
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,4 @@
-﻿namespace CronParser.Consol;
+﻿namespace CronExpression.Tests;
 
 public class Tests
 {
