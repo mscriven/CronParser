@@ -5,8 +5,12 @@
 Supports standard cron format. Does not support special time strings such as "@yearly". [Learn more at crontab.guru here!](https://crontab.guru/)
 
 There's three projects.
+- CronExpressions
 	- A class library containing all the domain logic for parsing a cron expression
+- CronosParser.ConsoleHost
+	> 'Cron's name originates from chronos, the Greek word for time.
 	- A Console Host application, adding all the logic specific to the application being hosted as a console application.
+- CronExpressions.Tests
 	- A unit test library for the class library, testing all the domain logic developed using TDD.
 
 # Building
