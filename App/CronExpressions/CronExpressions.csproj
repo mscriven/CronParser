@@ -7,4 +7,10 @@
     <RootNamespace>Scriven.Deliveroo.CronExpressions</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
 </Project>

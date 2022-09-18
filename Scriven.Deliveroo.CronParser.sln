@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{2998373E-131
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A952CEA6-C03B-4A95-A2A6-EAB31EFAAF28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronExpression.Tests", "CronExpression.Tests\CronExpression.Tests.csproj", "{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronExpressions.Tests", "CronExpression.Tests\CronExpressions.Tests.csproj", "{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

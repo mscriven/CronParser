@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
-    <RootNamespace>Scriven.Deliveroo.CronParser.Tests</RootNamespace>
+    <RootNamespace>Scriven.Deliveroo.CronExpressions.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,4 +17,7 @@
     <PackageReference Include="coverlet.collector" Version="3.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\App\CronExpressions\CronExpressions.csproj" />
+  </ItemGroup>
 </Project>
