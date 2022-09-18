@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1703.5
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronExpressions", "App\CronExpressions\CronExpressions.csproj", "{9C029BDA-DAEB-46B5-8687-45C9E9FA55EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CronExpressions", "App\CronExpressions\CronExpressions.csproj", "{9C029BDA-DAEB-46B5-8687-45C9E9FA55EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{2998373E-1313-4F50-993B-0A48AEA96445}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{A952CEA6-C03B-4A95-A2A6-EAB31EFAAF28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronExpressions.Tests", "CronExpression.Tests\CronExpressions.Tests.csproj", "{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CronExpressions.Tests", "CronExpression.Tests\CronExpressions.Tests.csproj", "{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CronosParser.ConsoleHost", "App\CronosParser.Console\CronosParser.ConsoleHost.csproj", "{533491CB-391E-425D-82DC-01C0C02017CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,15 +27,20 @@ Global
 		{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CF16B24-150D-4D5B-AF83-C68D5EA3445F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533491CB-391E-425D-82DC-01C0C02017CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533491CB-391E-425D-82DC-01C0C02017CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533491CB-391E-425D-82DC-01C0C02017CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533491CB-391E-425D-82DC-01C0C02017CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D3BF8A47-E215-4280-8B32-1ABC464454A6}
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9C029BDA-DAEB-46B5-8687-45C9E9FA55EC} = {2998373E-1313-4F50-993B-0A48AEA96445}
 		{0CF16B24-150D-4D5B-AF83-C68D5EA3445F} = {A952CEA6-C03B-4A95-A2A6-EAB31EFAAF28}
+		{533491CB-391E-425D-82DC-01C0C02017CD} = {2998373E-1313-4F50-993B-0A48AEA96445}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3BF8A47-E215-4280-8B32-1ABC464454A6}
 	EndGlobalSection
 EndGlobal

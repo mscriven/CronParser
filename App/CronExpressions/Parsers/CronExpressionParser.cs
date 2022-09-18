@@ -3,10 +3,9 @@ namespace Scriven.Deliveroo.CronExpressions
 {
     public sealed class CronExpressionParser
     {
-        public ICronExpression Parse(string cronExpression)
+        public ICronExpression Parse(IList<string> cronTokens)
         {
-            var cronTokens = cronExpression.Split(' ');
-            if (cronTokens.Length != 5)
+            if (cronTokens.Count() != 5)
             {
                 throw new ArgumentException("cron expression does not contain 5 tokens. Invalid format.");
             }

@@ -7,14 +7,14 @@
         public void LessThanFiveTokenThrowsException()
         {
             var sut = new CronExpressionParser();
-            Assert.Throws<ArgumentException>(() => sut.Parse("1 2 3 4"));
+            Assert.Throws<ArgumentException>(() => sut.Parse(new List<string> { "1", "2", "3", "4" }));
         }
 
         [Test]
         public void ExampleInSpec()
         {
             var sut = new CronExpressionParser();
-            var expression = sut.Parse("*/15 0 1,15 * 1-5");
+            var expression = sut.Parse(new List<string> { "*/15", "0", "1,15", "*", "1-5" });
             CollectionAssert.AreEquivalent(new int[] { 0, 15, 30, 45 }, expression.Minutes);
             CollectionAssert.AreEquivalent(new int[] { 0 }, expression.Hours);
             CollectionAssert.AreEquivalent(new int[] { 1, 15 }, expression.Days);
