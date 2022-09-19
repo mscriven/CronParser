@@ -2,6 +2,7 @@
 
 namespace Scriven.Deliveroo.CronExpressions.Tests;
 
+[TestFixture]
 internal sealed class CronTokenParserTests
 {
     [Test]
@@ -88,5 +89,11 @@ internal sealed class CronTokenParserTests
     public void GivenRangeSyntaxEndGreaterThanMaxThrow()
     {
         Assert.Throws<InvalidOperationException>(() => CronTokenParser.Parse("5-60", 0, 59));
+    }
+
+    [Test]
+    public void GivenRangeWithInvalidValuesThrow()
+    {
+        Assert.Throws<InvalidOperationException>(() => CronTokenParser.Parse("3,5,7", 0, 5));
     }
 }

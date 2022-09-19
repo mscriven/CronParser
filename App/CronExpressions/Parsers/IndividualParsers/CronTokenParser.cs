@@ -9,7 +9,15 @@
 
             if (timeExpression.Contains(','))
             {
-                return timeExpression.Split(",").Select(s => int.Parse(s));
+                var values = timeExpression.Split(",").Select(s => int.Parse(s));
+                foreach(var value in values)
+                {
+                    if (value < min || value > max)
+                    {
+                        throw new InvalidOperationException($"Value {value} out of range");
+                    }
+                }
+                return values;
             }
 
             if (timeExpression.StartsWith("*/"))
