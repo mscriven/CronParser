@@ -20,7 +20,7 @@ To just run the app, you only need the Net6 Runtime installed.
 
 # Example Usage
 
-When running the Console app, you need to a valid cron expression, and a command to be executed for every time that matches the cron expression, as a single argument.
+When running the Console app, you need to provide a valid cron expression, and a command to be executed for every time that matches the cron expression, as a single argument.
 
 E.g.
 ```console
