@@ -18,6 +18,8 @@ There's three projects.
 To build and run the app on Windows or Linux you will need to install the Net6 SDK: https://dotnet.microsoft.com/en-us/download/dotnet/6.0.
 To just run the app, you only need the Net6 Runtime installed.
 
+See https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-build for building.
+
 # Example Usage
 
 When running the Console app, you need to provide a valid cron expression, and a command to be executed for every time that matches the cron expression, as a single argument.
