@@ -46,3 +46,13 @@ command       /usr/bin/find
 - Use dependency injection to avoid static calls, duplicated code, and enable more unit test coverage.
 - Add support for month names.
 - Refactor to remove classes that ended up being defined purely for configuration. Potential opportunity to have each symbol parser be it's own strategy, and build a bag of valid strategies for each applicable token.
+
+
+Also prints out timestamps for next 5 executions from now.
+
+
+// Combine all options to generate timestamps
+// Order by time
+// Find index of next
+// Grab next 5
+// Print

@@ -96,4 +96,11 @@ internal sealed class CronTokenParserTests
     {
         Assert.Throws<InvalidOperationException>(() => CronTokenParser.Parse("3,5,7", 0, 5));
     }
+
+    [Test]
+    public void GivenTest()
+    {
+        var sut = CronTokenParser.Parse("0-30/15", 0, 59);
+        CollectionAssert.AreEquivalent(new List<int> { 0, 15, 30 }, sut);
+    }
 }

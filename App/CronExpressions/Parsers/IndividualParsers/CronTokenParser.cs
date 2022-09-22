@@ -7,6 +7,32 @@
             var numofNums = max - min + 1;
             if (timeExpression.Equals("*")) return Enumerable.Range(min, numofNums);
 
+            if (timeExpression.Contains('-') && timeExpression.Contains('/'))
+            {
+                var tokens = timeExpression.Split('/', StringSplitOptions.RemoveEmptyEntries);
+                var range = tokens[0];
+                var increment = int.Parse(tokens[1]);
+
+                var rangeTokens = range.Split('-', StringSplitOptions.RemoveEmptyEntries);
+                if (rangeTokens.Length == 2)
+                {
+                    var start = int.Parse(rangeTokens[0]);
+                    var end = int.Parse(rangeTokens[1]);
+
+                    if (start < min || start > max) throw new InvalidOperationException($"Range must be between {min}-{max}");
+                    if (end < min || end > max) throw new InvalidOperationException($"Range must be between {min}-{max}");
+                    if (start > end) throw new InvalidOperationException("Range start must be less than or equal to range end");
+
+                    var values = new List<int>();
+                    while (start <= end)
+                    {
+                        values.Add(start);
+                        start += increment;
+                    }
+                    return values;
+                }
+            }
+
             if (timeExpression.Contains(','))
             {
                 var values = timeExpression.Split(",").Select(s => int.Parse(s));
